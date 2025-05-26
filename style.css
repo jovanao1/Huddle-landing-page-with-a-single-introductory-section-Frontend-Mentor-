@@ -1,0 +1,94 @@
+body {
+    background-image: url(bg-desktop.svg);
+    background-color: blueviolet;
+}
+
+#logo {
+    margin: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.sve {
+    display: flex;
+}
+
+.kol2, .kol1 {
+    position: relative;
+    color: white;
+    font-size: larger;
+    margin: 20px;
+    padding: 5px;
+}
+
+#sadrzaj, #naslov, #dugme {
+    padding: 15px;
+}
+
+#naslov {
+    color: white;
+    font-size: 60px;
+}
+
+button {
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+    border-radius: 20%;
+    border: none;
+    width: 150px;
+    height: 30px;
+}
+
+#dugme {
+    box-shadow: 5px;
+}
+
+button:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+i {
+  font-size: 24px;
+  color: white;
+  margin: 10px;
+}
+
+i:hover {
+    color: pink;
+}
+
+#ikonice {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width:750px) {
+    .sve {
+        max-width: 90vw;
+        max-height: 90vh;
+        flex-direction: column;
+    }
+    #sl {
+        max-width: 80vw;
+    }
+    body {
+        background-image: url(bg-mobile.svg);
+    }
+    .kol2, #dugme {
+        position: relative;
+        margin: auto;
+    }
+    #naslov {
+        font-size: larger;
+        font-weight: bold; 
+    }
+    #logo {
+        width: 30vw;
+    }
+    i {
+        font-size: 18px;
+    }
+}
+
